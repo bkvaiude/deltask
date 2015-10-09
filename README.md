@@ -3,11 +3,17 @@
 ##Technology used for completing the task are:
 
 [CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+
 [Bootstrap](http://getbootstrap.com/) 
+
 [Bootstrap Template](http://getbootstrap.com/examples/navbar/) 
+
 [OpenShft] (https://openshift.redhat.com/)
+
 LocalStorage for storing temp json data
+
 jQuery and its plugins
+
 
 About project or task given to me:
 
@@ -16,7 +22,17 @@ I am trying accomplish both tasks using project.
 Here is my understanding for the project task:
 
 I think we are trying to develop the **Facebook Farmville** kind of game.
+
 I am trying to develop here backend services for that game.
+
+Web Services like
+
+1. Oauth token for Authentication
+2. Saving the score
+3. Leaderboard
+4. Cities listing and dashboard listing
+5. Live notification using nodejs
+6. 
 
 I have imagine game flow in following way
 
@@ -34,6 +50,7 @@ I have imagine game flow in following way
 1. If user fail to do so then he will need to pay fine in of golds and bad reputation points 
 1. If user always active and performing activities then he will receive the bonus gold and reputation points
 
+I have tried to implement following things
 
 UI 
 1. admin credentials admin/admin fixed for now
@@ -48,4 +65,5 @@ Web services (will return the json output)
 As this things are not totally got covered in the 3 hour test, but I have tried my best.
 
 thanks,
+
 Bhusha Vaiude
