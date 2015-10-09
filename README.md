@@ -5,6 +5,7 @@
 [CakePHP](http://www.cakephp.org) - The rapid development PHP framework
 [Bootstrap](http://getbootstrap.com/) 
 [Bootstrap Template](http://getbootstrap.com/examples/navbar/) 
+[OpenShft] (https://openshift.redhat.com/)
 LocalStorage for storing temp json data
 jQuery and its plugins
 
