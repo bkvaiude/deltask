@@ -60,9 +60,10 @@ I am trying to develop here backend services for that game.
 ####Web services (will return the json output)
 1. Create city
 1. Create building
+2. listing cities
 
 
-As this things are not totally got covered in the 3 hour test, but I have tried my best.
+As these things are not totally got covered in the 3 hour test, but I have tried my best.
 
 thanks,
 
