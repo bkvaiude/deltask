@@ -30,4 +30,19 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+
+    public function beforeSave($options = array()) {
+
+        $currentModelName = $this->alias;
+        $currentModel = ClassRegistry::init($currentModelName);
+        $modelMeta = $currentModel->schema();
+
+        if (!$this->id && empty($this->data[$this->alias][$this->primaryKey])) {
+            $this->data[$currentModelName]['created'] = date('Y-m-d H:i:s');
+            $this->data[$currentModelName]['updated'] = date('Y-m-d H:i:s');
+        } else {
+            $this->data[$currentModelName]['updated'] = date('Y-m-d H:i:s');
+        }
+    }
+
 }

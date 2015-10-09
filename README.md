@@ -1,11 +1,11 @@
-#Bhushan Kishor Vaiude
+#Deltask: Bob The Buider
 
 ##Technology used for completing the task are:
 
 [CakePHP](http://www.cakephp.org) - The rapid development PHP framework
 [Bootstrap](http://getbootstrap.com/) 
 [Bootstrap Template](http://getbootstrap.com/examples/navbar/) 
-
+LocalStorage for storing temp json data
 jQuery and its plugins
 
 About project or task given to me:
@@ -33,7 +33,18 @@ I have imagine game flow in following way
 1. If user fail to do so then he will need to pay fine in of golds and bad reputation points 
 1. If user always active and performing activities then he will receive the bonus gold and reputation points
 
-As this things are not totally go covered in the 3 hour test, but I have tried my best.
+
+UI 
+1. admin credentials admin/admin fixed for now
+1. admin can see the created cities and stats for each city
+1. create new user if required
+
+Web services (will return the json output)
+1. Create city
+1. Create building
+
+
+As this things are not totally got covered in the 3 hour test, but I have tried my best.
 
 thanks,
 Bhusha Vaiude

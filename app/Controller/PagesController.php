@@ -19,7 +19,7 @@
  */
 
 App::uses('AppController', 'Controller');
-
+App::uses('ConnectionManager', 'Model');
 /**
  * Static content controller
  *
@@ -35,7 +35,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+	public $uses = array("User");
 
 /**
  * Displays a view
@@ -72,5 +72,22 @@ class PagesController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+	}
+
+	public function dashboard(){
+		$rows = $this->User->query("select cities.`name`, buildings.`name` from users, cities, buildings where users.id = cities.user_id and cities.id = buildings.city_id;");
+		$this->set("cities", $rows);
+		if(isset($_REQUEST['dataType']) == "json"){
+			echo json_encode($rows);exit;
+		}
+	}
+	public function createUser(){
+		$isUserExits = $this->User->findByEmail($_REQUEST['email']);
+		$op = array("status"=>0, "message"=>"User already exits for given email addres");
+		if(empty($isUserExits)){
+		$op = array("status"=>1, "message"=>"User saved successfully!");
+
+		}
+		echo json_encode($op);exit;
 	}
 }
